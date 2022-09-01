@@ -10,18 +10,14 @@ public class Shipping_Type {
 
     @Id
     @Column
-    @JsonProperty("id")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id_generator")
     @SequenceGenerator(name = "id_generator", sequenceName = "id_gen", initialValue = 1, allocationSize = 1)
     private int id;
     @Column
-    @JsonProperty("name")
     private String name;
     @Column
-    @JsonProperty("speed")
     private String speed;
     @Column
-    @JsonProperty("requirements")
     private String requirements;
 
     public int getId() {
