@@ -11,7 +11,7 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     @Column
-    private String length;
+    private String len;
     @Column
     private String width;
     @Column
@@ -38,11 +38,11 @@ public class Order {
     }
 
     public String getLength() {
-        return length;
+        return len;
     }
 
     public void setLength(String length) {
-        this.length = length;
+        this.len = length;
     }
 
     public String getWidth() {
@@ -112,9 +112,9 @@ public class Order {
     public Order() {
     }
 
-    public Order(int id, String length, String width, String height, String weight, boolean hazard, boolean perish, String orig, String dest, int shipping_type) {
+    public Order(int id, String len, String width, String height, String weight, boolean hazard, boolean perish, String orig, String dest, int shipping_type) {
         this.id = id;
-        this.length = length;
+        this.len = len;
         this.width = width;
         this.height = height;
         this.weight = weight;
@@ -129,7 +129,7 @@ public class Order {
     public String toString() {
         return "Order{" +
                 "id=" + id +
-                ", length='" + length + '\'' +
+                ", len='" + len + '\'' +
                 ", width='" + width + '\'' +
                 ", height='" + height + '\'' +
                 ", weight='" + weight + '\'' +

@@ -1,7 +1,7 @@
 package com.BrinMeyAir.Controller;
 
 import com.BrinMeyAir.Entity.Shipping_Type;
-import com.BrinMeyAir.Service.Shipping_TypeService;
+import com.BrinMeyAir.Service.Shipping_TypeServImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +12,7 @@ import java.util.List;
 public class Shipping_TypeController {
 
     @Autowired
-    private Shipping_TypeService serv;
+    private Shipping_TypeServImpl serv;
 
     @GetMapping("/shipping")
     public List<Shipping_Type> getAllServices() {
